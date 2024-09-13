@@ -15,4 +15,6 @@ for filename in sys.argv [1:]:
                 data [d][row [d]] = 0
             data [d][row [d]] += 1
 
-pprint.pprint (data)
+for d in data:
+    for x in data [d]:
+        print (d, x, data [d][x], sep=": ")
